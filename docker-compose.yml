@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  pdf-parser:
+    build : .
+    volumes:
+      - ./pdfs:/app/pdfs 
+    command  : ["./pdf-parser", "/app/pdfs/sample.pdf"]
+
+
+   
+
